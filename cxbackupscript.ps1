@@ -1,4 +1,4 @@
-# Remove the -dryRun cmd from each function to run without 
+# Remove all three -dryRun cmd's from each function to run without 
 function Backup-Files {
   param (
     [switch]$dryRun
@@ -72,7 +72,7 @@ function Backup-Files {
     exit
   }
 }
-      Backup-Files -dryRun
+      Backup-Files -dryRun #remove -dryRun to run without
 function SageDotComXConnectdll {
   param(
     [switch]$DryRun
@@ -165,7 +165,7 @@ function SageDotComXConnectdll {
     exit
   }
 }
-      SageDotComXConnectdll -dryRun
+      SageDotComXConnectdll -dryRun #remove -dryRun to run without
 function SageDotComCustomRulesxml {
   param(
     [switch]$DryRun
@@ -258,4 +258,4 @@ function SageDotComCustomRulesxml {
   }
   Write-Host "Script finished"
 }
-    SageDotComCustomRulesxml -dryRun
+    SageDotComCustomRulesxml -dryRun #remove -dryRun to run without
